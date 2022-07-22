@@ -1,0 +1,98 @@
+{
+  "id": "f44a11a2-f733-45e4-b61d-2f2ac3bb7dd8",
+  "version": "2.0",
+  "name": "Sofia",
+  "url": "https://mikemike198.github.io",
+  "tests": [{
+    "id": "b4912fba-6714-43aa-b25a-9b32a5ad31e4",
+    "name": "PrepararPedido",
+    "commands": [{
+      "id": "370cdb01-4344-4b4b-ad18-ba12d25b5165",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12a638e1-fd0c-438d-8845-d2560e7c44b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e939e49c-67a9-4d0a-80f7-d538a456d1f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Estabelecimento",
+      "targets": [
+        ["linkText=Estabelecimento", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Estabelecimento')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'parceiro.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Estabelecimento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b048ef51-9d74-438b-8efd-ff970e295649",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pedido:nth-child(3) > h4",
+      "targets": [
+        ["css=.pedido:nth-child(3) > h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Pedido #25')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dec99ace-020d-4e07-83c1-e93acc19fe18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close > span",
+      "targets": [
+        ["css=.close > span", "css:finder"],
+        ["xpath=//div[@id='detalhes']/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c19f5644-0609-424b-93c6-55b878040d9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pedido:nth-child(4) > h4",
+      "targets": [
+        ["css=.pedido:nth-child(4) > h4", "css:finder"],
+        ["xpath=//div[3]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Pedido #21')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e0a679c-f9c7-4093-8f1b-8bd77623e539",
+      "comment": "",
+      "command": "click",
+      "target": "id=pronto",
+      "targets": [
+        ["id=pronto", "id"],
+        ["css=#pronto", "css:finder"],
+        ["xpath=//button[@id='pronto']", "xpath:attributes"],
+        ["xpath=//div[@id='detalhes']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Pedido pronto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a2c6fbe8-aba4-4e4e-8448-ff7b61eded21",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b4912fba-6714-43aa-b25a-9b32a5ad31e4"]
+  }],
+  "urls": ["https://mikemike198.github.io/"],
+  "plugins": []
+}

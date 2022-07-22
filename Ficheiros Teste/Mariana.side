@@ -1,0 +1,73 @@
+{
+  "id": "34602e41-591c-42e3-b8dd-90b9825e8d02",
+  "version": "2.0",
+  "name": "Mariana",
+  "url": "https://mikemike198.github.io",
+  "tests": [{
+    "id": "434b02e9-4ce1-446e-bae2-e3182bb19748",
+    "name": "ReceberPEdidoEntrega",
+    "commands": [{
+      "id": "70365a39-ff0d-45a6-96b3-4414591069f2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02470899-bd56-4a35-9990-d38d3246833d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbef72ad-90ce-4cf6-b8da-0bd343ccc731",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Estafeta",
+      "targets": [
+        ["linkText=Estafeta", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Estafeta')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'estafeta.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Estafeta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "839a6b6f-909a-4ad6-8f36-013604118489",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pedido:nth-child(3)",
+      "targets": [
+        ["css=.pedido:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23cffe69-3c96-465d-8a6c-5f80baadb75d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='detalhes']/div/div/div[3]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fazer entrega')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e70e8ec-8fe6-4857-9aad-de5be193453e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["434b02e9-4ce1-446e-bae2-e3182bb19748"]
+  }],
+  "urls": ["https://mikemike198.github.io/"],
+  "plugins": []
+}
